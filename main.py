@@ -14,7 +14,7 @@ import asyncio
 from pathlib import Path
 
 
-@register("avatar_uploader", "YourName", "头像上传插件", "1.0.0")
+@register("avatar_uploader", "晨", "头像上传插件", "1.3.0")
 class AvatarUploaderPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
