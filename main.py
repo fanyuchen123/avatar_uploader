@@ -16,9 +16,11 @@ from pathlib import Path
 
 @register("avatar_uploader", "晨", "头像上传插件", "1.3.0")
 class AvatarUploaderPlugin(Star):
-    def __init__(self, context: Context, config: AstrBotConfig):
+    def __init__(self, context: Context, config: AstrBotConfig = None):
         super().__init__(context)
-        self.conf = config
+        # 即使不使用配置，也需要接收并存储它
+        self.conf = config or {}
+        
         # 存储等待头像上传的用户会话状态
         self.waiting_for_avatar = {}
         self.avatar_dir = StarTools.get_data_dir("avatar_uploader") / "avatars"
