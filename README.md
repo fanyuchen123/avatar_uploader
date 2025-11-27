@@ -1,8 +1,6 @@
-# helloworld
+# Set-tx
 
-AstrBot 插件模板
-
-A template plugin for AstrBot plugin feature
+**设置头像测试**
 
 # 支持
 
